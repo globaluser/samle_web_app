@@ -169,6 +169,24 @@
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.2</version>
+				<executions>
+        <execution>
+            <id>s1</id>
+            <phase>verify</phase>
+            <goals>
+                <goal>sonar</goal>
+            </goals>
+            
+        </execution>
+        <execution>
+            <id>s2</id>
+            <phase>install</phase>
+            <goals>
+                <goal>sonar</goal>
+            </goals>
+            
+        </execution>
+    </executions>
       </plugin>
 		</plugins>
 	</build>
