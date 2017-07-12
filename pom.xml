@@ -190,4 +190,10 @@
       </plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+  <repository>
+    <id>web_app</id>
+    <url>http://localhost:8082/nexus/content/repositories/web_app</url>
+  </repository>
+</distributionManagement>
 </project>
